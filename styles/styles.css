@@ -665,7 +665,7 @@ ul {
 
 .container {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -694,7 +694,7 @@ ul {
 }
 
 .logo {
-    max-width: 80px;
+    max-width: 100px;
 }
 
 .nav-menu {
@@ -1077,6 +1077,7 @@ ul {
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    background-color: #333;
 
     &.dropdown-wrapper {
         flex-flow: row;
@@ -1087,10 +1088,11 @@ ul {
     min-width: 100%;
     box-sizing: border-box;
     padding: 40px;
-    border-radius: 10px;
+
     background-color: transparent;
     min-height: 250px;
-    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    background-color: #333;
+    color: #fff;
 }
 
 .section {
@@ -1209,7 +1211,7 @@ ul {
     grid-row-gap: var(--mobile-spacing);
     flex-flow: column;
     width: 100%;
-    max-width: 70%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
 }
@@ -1259,31 +1261,49 @@ ul {
     flex-flow: column;
     height: 100%;
     display: flex;
+    flex-direction: column-reverse;
 }
 
 
 .review-info {
-    grid-column-gap: 15px;
-    grid-row-gap: 3px;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto 1fr;
-    grid-auto-columns: 1fr;
-    width: 40%;
+    display: flex;
+    width: 90%;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 20px;
-    display: grid;
-    color: #333;
+    justify-content: space-between;
+
+    color: #fff;
     margin: 0 auto;
 }
 
+.review-city {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    span {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+
 .reviewer-img {
-    background-color: var(--img-background);
-    border-radius: 100%;
-    width: 52px;
-    min-width: 52px;
-    height: 52px;
-    overflow: hidden;
+
+
+    color: #fff;
+
+    img {
+        width: 52px;
+        min-width: 52px;
+        height: 52px;
+        overflow: hidden;
+        background-color: var(--img-background);
+        border-radius: 100%;
+        margin-bottom: 20px;
+    }
+
 }
 
 .right-arrow {
@@ -1317,7 +1337,8 @@ ul {
 .review-text {
     font-size: 18px;
     line-height: 160%;
-    color: #333;
+    color: #fff;
+    text-align: left;
 }
 
 .controls {
@@ -1325,7 +1346,6 @@ ul {
     position: relative;
     width: 100px;
     margin: 0 auto;
-    margin-top: 0px;
     margin-top: 50px;
 }
 
@@ -1494,7 +1514,13 @@ label {
     display: flex;
     row-gap: 15px;
     justify-content: space-between;
+    max-width: 600px;
 
+}
+
+.contact-title {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .contact-content__info {
@@ -2110,7 +2136,15 @@ label {
 }
 
 .button-tour {
-    grid-column: 2;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.w-dyn-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-content {
@@ -2203,6 +2237,16 @@ label {
         font-size: 18px;
     }
 
+    .about-content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-inner {
+        max-width: 1000px;
+        text-align: center;
+    }
+
     .nav-menu {
         border-bottom: 1px solid var(--border);
         background-color: var(--white);
@@ -2213,8 +2257,8 @@ label {
             position: absolute;
             width: 100%;
             left: 0;
-            top: 112px;
-            background-color: transparent;
+            top: 78px;
+            background-color: #333;
         }
     }
 
@@ -2239,7 +2283,7 @@ label {
     }
 
     .menu-button {
-        border: 1px solid #333;
+        border: 1px solid #fff;
         border-radius: 8px;
         justify-content: center;
         align-items: center;
@@ -2261,7 +2305,7 @@ label {
 
     .nav-top-line:where(.w-variant-81c30c15-970a-d0ef-5d9c-07372335add7),
     .nav-top-line:where(.w-variant-388ec9d6-4e1e-759a-c3c4-06c8935714dd) {
-        background-color: #333;
+        background-color: #fff;
     }
 
     .nav-middle-line {
@@ -2274,7 +2318,7 @@ label {
 
     .nav-middle-line:where(.w-variant-81c30c15-970a-d0ef-5d9c-07372335add7),
     .nav-middle-line:where(.w-variant-388ec9d6-4e1e-759a-c3c4-06c8935714dd) {
-        background-color: #333;
+        background-color: #fff;
     }
 
     .nav-bottom-line {
@@ -2288,7 +2332,7 @@ label {
 
     .nav-bottom-line:where(.w-variant-81c30c15-970a-d0ef-5d9c-07372335add7),
     .nav-bottom-line:where(.w-variant-388ec9d6-4e1e-759a-c3c4-06c8935714dd) {
-        background-color: #333;
+        background-color: #fff;
     }
 
     .footer {
@@ -2348,7 +2392,7 @@ label {
     .teams-list {
         grid-column-gap: 30px;
         grid-row-gap: 30px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .service-card {
@@ -2391,13 +2435,52 @@ label {
 
     .faq {
         &.active .answer-block {
-            height: 150px;
+            height: 100px;
         }
     }
 
 }
 
 @media screen and (max-width: 767px) {
+    .container {
+        padding: 20px 20px;
+    }
+
+    .title-section-wrap {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-section-wrap {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .contact-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    .hero-wrap {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .hero-content {
+        & p {
+            font-size: 18px;
+        }
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
     h1 {
         font-size: 32px;
     }
@@ -2408,7 +2491,7 @@ label {
 
     .faq {
         &.active .answer-block {
-            height: 230px;
+            height: 150px;
         }
     }
 
@@ -2470,7 +2553,7 @@ label {
     }
 
     .footer-bottom {
-        grid-row-gap: 15px;
+        grid-row-gap: 30px;
         flex-flow: column;
     }
 
@@ -2563,11 +2646,22 @@ label {
     .about-img {
         max-width: none;
     }
+
+    .teams-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 479px) {
     .hero-section {
         padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .faq {
+        &.active .answer-block {
+            height: 250px;
+        }
     }
 
     .footer-outer {
@@ -2583,8 +2677,12 @@ label {
     }
 
     .section {
-        padding-top: var(--mobile-spacing);
-        padding-bottom: var(--mobile-spacing);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .container {
+        padding: 0 10px;
     }
 
     .body-large {
@@ -2609,20 +2707,29 @@ label {
         padding-top: 10px;
         padding-bottom: 10px;
         padding-right: 10px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .review-city {
+        span {
+            font-size: 14px;
+            margin-bottom: 0;
+            line-height: normal;
+        }
     }
 
     .right-arrow {
         bottom: 0;
-        left: 50%;
-        right: 50%;
-        transform: translate(25px);
+        right: 0;
+        top: 0;
     }
 
     .left-arrow {
         bottom: 0;
-        left: 50%;
-        right: 50%;
-        transform: translate(-25px);
+        left: 0;
+        margin: 0;
+        top: 0;
     }
 
     .review-text {
@@ -2632,7 +2739,6 @@ label {
     .teams-list {
         grid-column-gap: 10px;
         grid-row-gap: 30px;
-        grid-template-columns: 1fr;
     }
 
     .service-list {
