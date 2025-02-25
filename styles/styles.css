@@ -1494,6 +1494,7 @@ label {
     display: flex;
     row-gap: 15px;
     justify-content: space-between;
+
 }
 
 .contact-content__info {
@@ -1532,12 +1533,21 @@ label {
     flex-direction: column;
     justify-content: center;
     position: relative;
+
+    & .primary-button {
+        padding: 0 50px;
+    }
 }
 
 .form__item {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     margin-bottom: 30px;
+}
+
+.form__item-agreement {
+    flex-direction: row;
 }
 
 .form__list {
@@ -1749,11 +1759,12 @@ label {
 .leaderboard-section {
     background-color: #1a1a1a;
     padding: 40px 0;
-    border-radius: 10px;
 }
 
 .leaderboard-table {
     overflow-x: auto;
+    max-width: 1000px;
+    width: 100%;
 }
 
 .leaderboard-table-content {
