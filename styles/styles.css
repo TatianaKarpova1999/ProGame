@@ -864,6 +864,7 @@ ul {
     transition: background-color 0.5s;
     position: relative;
     background: linear-gradient(90deg, #000000, #af0000, #ff0000, #ff8800);
+    transition: 0.2s;
 
     background-size: 400% 400%;
 
@@ -875,11 +876,6 @@ ul {
 
 .primary-button:where(.w-variant-92c17b19-ee94-0c42-94f4-ca9187bd3540) {
     border-style: none;
-}
-
-.primary-button:hover {
-    background-color: #e02727;
-    color: #fff;
 }
 
 .footer {
@@ -1072,6 +1068,7 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 .slides {
@@ -1088,9 +1085,10 @@ ul {
     min-width: 100%;
     box-sizing: border-box;
     padding: 40px;
+    min-height: 342px;
 
     background-color: transparent;
-    min-height: 250px;
+
     background-color: #333;
     color: #fff;
 }
@@ -1185,12 +1183,14 @@ ul {
 }
 
 .read-article-link {
-    color: #db7c4d;
+    color: #e14b00;
+    margin-top: 10px;
+    display: block;
 }
 
 
 .date-text {
-    background-color: var(--light-green);
+    background-color: #fff;
     color: var(--primary);
     border-radius: 8px;
     padding: 10px 15px;
@@ -1295,13 +1295,12 @@ ul {
     color: #fff;
 
     img {
-        width: 52px;
-        min-width: 52px;
-        height: 52px;
+        width: 70px;
+        height: 70px;
         overflow: hidden;
         background-color: var(--img-background);
         border-radius: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
 }
@@ -1713,6 +1712,7 @@ label {
     & .teams-list {
         grid-template-columns: 1fr 1fr;
         max-width: 1000px;
+        width: 100%;
     }
 
     & .w-dyn-item {
@@ -1729,6 +1729,8 @@ label {
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     display: grid;
+    max-width: 1000px;
+    width: 100%;
 }
 
 .team-card {
@@ -1761,7 +1763,7 @@ label {
     border: 1px solid #333;
     min-height: 270px;
     height: 100%;
-    max-width: 270px;
+
 }
 
 .age-icon {
@@ -1776,6 +1778,9 @@ label {
     z-index: 1;
     margin-bottom: 20px;
     color: #333;
+    justify-content: space-between;
+    height: 100%;
+
 
     h5 {
         color: #333;
@@ -1864,7 +1869,8 @@ label {
 }
 
 .primary-button:hover {
-    background-color: #ff4c4c;
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 .fantasy-content {
@@ -1981,9 +1987,11 @@ label {
 
 
 .service-icon {
-    width: 80px;
+    width: 100%;
     min-width: 80px;
-    height: 80px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
 .service-content {
@@ -2139,12 +2147,14 @@ label {
     max-width: 300px;
     width: 100%;
     margin-top: 50px;
+    grid-column: 2;
 }
 
 .w-dyn-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .about-content {
@@ -2236,6 +2246,8 @@ label {
     h5 {
         font-size: 18px;
     }
+
+
 
     .about-content {
         justify-content: center;
@@ -2392,7 +2404,7 @@ label {
     .teams-list {
         grid-column-gap: 30px;
         grid-row-gap: 30px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .service-card {
@@ -2445,6 +2457,11 @@ label {
     .container {
         padding: 20px 20px;
     }
+
+    .button-tour {
+        grid-column: auto;
+    }
+
 
     .title-section-wrap {
         align-items: center;
@@ -2613,10 +2630,6 @@ label {
         max-width: none;
     }
 
-    .teams-list {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .service-list {
         grid-template-columns: 1fr;
     }
@@ -2649,6 +2662,7 @@ label {
 
     .teams-list {
         grid-template-columns: 1fr;
+        max-width: 500px;
     }
 }
 
